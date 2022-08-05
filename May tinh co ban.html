@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<table border="1">
+
+  <input type="text" id="input">
+
+  <tr>
+    <td><button onclick="input('1') "value="3">1</button></td>
+    <td><button onclick="input('2') "value="1">2</button></td>
+    <td><button onclick="input('3') "value="3">3</button></td>
+    <td><button onclick="input('+') "value="+">+</button></td>
+  </tr>
+<tr>
+  <td><button onclick="input('4') "value="4">4</button></td>
+  <td><button onclick="input('5') "value="5">5</button></td>
+  <td><button onclick="input('6') "value="6">6</button></td>
+  <td><button onclick="input('-') "value="-">-</button></td>
+</tr>
+<tr>
+  <td><button onclick="input('7') "value="7">7</button></td>
+  <td><button onclick="input('8') "value="8">8</button></td>
+  <td><button onclick="input('9') "value="9">9</button></td>
+  <td><button onclick="input('*') "value="*">*</button></td>
+</tr>
+<tr>
+  <td><button onclick="reset('AC') "value="AC">AC</button></td>
+  <td><button onclick="input('0') "value="0">0</button></td>
+  <td><button onclick="done('=') "value===">=</button></td>
+  <td><button onclick="input('/') "value="/">/</button></td>
+</tr>
+</table>
+<script>
+  function input(toantu){
+    document.getElementById('input').value +=toantu
+  }
+  function done(){
+    let ketqua = document.getElementById('input').value
+    document.getElementById('input').value = eval(ketqua)
+  }
+  function reset(){
+    document.getElementById('input').value = '';
+  }
+</script>
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
